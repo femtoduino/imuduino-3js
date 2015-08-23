@@ -5,4 +5,4 @@ gulp.task('static', function() {
     .pipe(gulp.dest('public'))
 })
 
-gulp.task('default', ['static', 'pyr', 'raw', 'playback'])
+gulp.task('default', ['static', 'pyr', 'raw', 'playback', 'accel-xyz', 'gyro-xyz', 'mag-xyz', 'temp-alt'])

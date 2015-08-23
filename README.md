@@ -21,7 +21,7 @@ npm install -g browserify
 # Install local deps
 npm install
 
-# Run gulp 
+# Run gulp (Do this every time you update a client file. See gulp/default.js to see available gulp actions)
 gulp
 
 # Configure app to run the Yaw-Pitch-Roll section, see localhost:4200/ after starting the server.

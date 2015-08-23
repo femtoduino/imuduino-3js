@@ -29,6 +29,7 @@ IMUduino.on('packet', function (p) {
   p.time = new Date().getTime()
   p.duration = (new Date().getTime()) - start
   io.emit(p.type || 'unknown', p)
+  
   start = new Date().getTime() // Times are deltas
 })
 
