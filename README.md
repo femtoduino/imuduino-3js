@@ -1,6 +1,9 @@
 IMUduino + ThreeJS README
 =========================
 
+For Windows, please see Sandeep's NobleJS README first!
+https://github.com/sandeepmistry/noble
+
 If you are using a Bluetooth 4.0 adapter on a GNU/Linux machine, you may need to run the following command from within this folder:
 
 ```
