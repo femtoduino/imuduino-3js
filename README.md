@@ -14,6 +14,9 @@ find -path '*noble*Release/hci-ble' -exec sudo setcap cap_net_raw+eip '{}' \;
 Note, if you have multiple Bluetooth HCI devices on your machine, you may need to power down the non-BLE capable devices using `hciconfig hciX down` (X is the index number, as seen with the `hcitool` command).
 
 # Starting up
+Requires Python 2.7, make sure to install python.exe to local path on Windows installs. Log out, and log back in after install if on Windows.
+For node installation, I use NVM (or NVM for windows, which should go to the C:\ drive path to avoid issues). On Windows, you will need Node version 4.4.0, as later versions have issues between node-gyp and the usb npm package (unresolved as of 6/3/2016)
+
 Grab a checkout of this code, then run the following from within the checkout 'imuduino-3js' folder (Node v0.12 or better):
 
 ```

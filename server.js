@@ -28,8 +28,11 @@ IMUduino.on('packet', function (p) {
   p = _.mapValues(p, degreeToRadians)
   p.time = new Date().getTime()
   p.duration = (new Date().getTime()) - start
-  io.emit(p.type || 'unknown', p)
-  
+  io.emit(p.type || 'unknown', p.data)
+  console.log('Emitted ' + (p.type || 'unknown'));
+  console.log('Emitted data is:');
+  console.log(p.data);
+
   start = new Date().getTime() // Times are deltas
 })
 
